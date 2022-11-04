@@ -32,7 +32,26 @@
         "type": "uint256"
       }
     ],
-    "name": "AchievementRecord",
+    "name": "AssetLegacyRecord",
+    "type": "event"
+  },
+  {
+    "anonymous": false,
+    "inputs": [
+      {
+        "indexed": true,
+        "internalType": "uint256",
+        "name": "gameId",
+        "type": "uint256"
+      },
+      {
+        "indexed": false,
+        "internalType": "uint256",
+        "name": "recordId",
+        "type": "uint256"
+      }
+    ],
+    "name": "GameLegacyRecord",
     "type": "event"
   },
   {
@@ -121,25 +140,6 @@
       }
     ],
     "name": "RoleRevoked",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "uint256",
-        "name": "gameId",
-        "type": "uint256"
-      },
-      {
-        "indexed": false,
-        "internalType": "uint256",
-        "name": "recordId",
-        "type": "uint256"
-      }
-    ],
-    "name": "SystemRecord",
     "type": "event"
   },
   {
@@ -237,6 +237,73 @@
     "inputs": [
       {
         "internalType": "uint256",
+        "name": "assetId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "assetType",
+        "type": "bytes32"
+      }
+    ],
+    "name": "assetLegaciesOfAssetTotalSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "recordsCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gameId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "bytes32",
+        "name": "assetType",
+        "type": "bytes32"
+      }
+    ],
+    "name": "assetLegaciesOfGameTotalSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "recordsCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "bytes32",
+        "name": "assetType",
+        "type": "bytes32"
+      }
+    ],
+    "name": "assetLegaciesTotalSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "recordsCount",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
         "name": "index",
         "type": "uint256"
       },
@@ -246,7 +313,7 @@
         "type": "bytes32"
       }
     ],
-    "name": "achievementByIndex",
+    "name": "assetLegacyByIndex",
     "outputs": [
       {
         "internalType": "uint256",
@@ -290,7 +357,7 @@
         "type": "bytes32"
       }
     ],
-    "name": "achievementOfAssetByIndex",
+    "name": "assetLegacyOfAssetByIndex",
     "outputs": [
       {
         "internalType": "uint256",
@@ -334,7 +401,7 @@
         "type": "bytes32"
       }
     ],
-    "name": "achievementOfGameByIndex",
+    "name": "assetLegacyOfGameByIndex",
     "outputs": [
       {
         "internalType": "uint256",
@@ -364,73 +431,6 @@
     "inputs": [
       {
         "internalType": "uint256",
-        "name": "assetId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "bytes32",
-        "name": "assetType",
-        "type": "bytes32"
-      }
-    ],
-    "name": "achievementsOfAssetTotalSupply",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "recordsCount",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "gameId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "bytes32",
-        "name": "assetType",
-        "type": "bytes32"
-      }
-    ],
-    "name": "achievementsOfGameTotalSupply",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "recordsCount",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "bytes32",
-        "name": "assetType",
-        "type": "bytes32"
-      }
-    ],
-    "name": "achievementsTotalSupply",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "recordsCount",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
         "name": "gameId",
         "type": "uint256"
       },
@@ -450,7 +450,7 @@
         "type": "string"
       }
     ],
-    "name": "createAchievementRecord",
+    "name": "createAssetLegacy",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"
@@ -468,9 +468,104 @@
         "type": "string"
       }
     ],
-    "name": "createSystemRecord",
+    "name": "createGameLegacy",
     "outputs": [],
     "stateMutability": "nonpayable",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gameId",
+        "type": "uint256"
+      }
+    ],
+    "name": "gameLegaciesOfGameTotalSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
+    "name": "gameLegaciesTotalSupply",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "recordId",
+        "type": "uint256"
+      }
+    ],
+    "name": "gameLegacyByIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "gameId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "data",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "gameId_",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "gameLegacyOfGameByIndex",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "gameId",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "timestamp",
+        "type": "uint256"
+      },
+      {
+        "internalType": "string",
+        "name": "data",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
@@ -647,101 +742,6 @@
         "internalType": "bool",
         "name": "",
         "type": "bool"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "recordId",
-        "type": "uint256"
-      }
-    ],
-    "name": "systemRecordByIndex",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "gameId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "timestamp",
-        "type": "uint256"
-      },
-      {
-        "internalType": "string",
-        "name": "data",
-        "type": "string"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "gameId_",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "index",
-        "type": "uint256"
-      }
-    ],
-    "name": "systemRecordOfGameByIndex",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "gameId",
-        "type": "uint256"
-      },
-      {
-        "internalType": "uint256",
-        "name": "timestamp",
-        "type": "uint256"
-      },
-      {
-        "internalType": "string",
-        "name": "data",
-        "type": "string"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "gameId",
-        "type": "uint256"
-      }
-    ],
-    "name": "systemRecordsOfGameTotalSupply",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [],
-    "name": "systemRecordsTotalSupply",
-    "outputs": [
-      {
-        "internalType": "uint256",
-        "name": "",
-        "type": "uint256"
       }
     ],
     "stateMutability": "view",
