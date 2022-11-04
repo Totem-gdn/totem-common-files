@@ -177,39 +177,6 @@
             }
         ]
     },
-
-    {"description": "Weapon Type", "id": "weapon_type", "type": "map", "gene": 3, "start": 1, "length": 1,
-        "values": [
-            {
-                "value": 0,
-                "key": "Axe"
-            },
-            {
-                "value": 1,
-                "key": "Dagger"
-            }
-        ]
-    },
-    {"description": "Weapon Material", "id": "weapon_material", "type": "map", "gene": 3, "start": 2, "length": 2,
-        "values": [
-            {
-                "value": 0,
-                "key": "Bone"
-            },
-            {
-                "value": 1,
-                "key": "Flint"
-            },
-            {
-                "value": 2,
-                "key": "Obsidian"
-            },
-            {
-                "value": 3,
-                "key": "Wood"
-            }
-        ]
-    },
     {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24}
 
 ]
