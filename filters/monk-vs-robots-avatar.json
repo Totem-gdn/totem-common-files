@@ -145,35 +145,35 @@
         "values": [
             {
                 "value": 0,
-                "key": "afro"
+                "key": "Afro"
             },
             {
                 "value": 1,
-                "key": "asymmetrical"
+                "key": "Bang"
             },
             {
                 "value": 2,
-                "key": "braids"
+                "key": "BigTail"
             },
             {
                 "value": 3,
-                "key": "buzz cut"
+                "key": "Curls"
             },
             {
                 "value": 4,
-                "key": "dreadlocks"
+                "key": "Dreadlocks"
             },
             {
                 "value": 5,
-                "key": "long"
+                "key": "Mohawk"
             },
             {
                 "value": 6,
-                "key": "ponytail"
+                "key": "MohawkWithTail"
             },
             {
                 "value": 7,
-                "key": "short"
+                "key": "Short"
             }
         ]
     },
