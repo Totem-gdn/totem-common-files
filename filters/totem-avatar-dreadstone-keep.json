@@ -1,5 +1,4 @@
 [
-    {"description": "Sex", "id": "sex_bio", "type": "bool", "gene": 0, "start": 12, "length": 1},
     {"description": "Body Strength", "id": "body_strength", "type": "bool", "gene": 0, "start": 13, "length": 1},
     {"description": "Body Type", "id": "body_type", "type": "bool", "gene": 0, "start": 14, "length": 1},
     {"description": "Human Skin Color", "id": "human_skin_color", "type": "map", "gene": 1, "start": 0, "length": 4,
@@ -174,39 +173,6 @@
             {
                 "value": 7,
                 "key": "short"
-            }
-        ]
-    },
-
-    {"description": "Weapon Type", "id": "weapon_type", "type": "map", "gene": 3, "start": 1, "length": 1,
-        "values": [
-            {
-                "value": 0,
-                "key": "Axe"
-            },
-            {
-                "value": 1,
-                "key": "Dagger"
-            }
-        ]
-    },
-    {"description": "Weapon Material", "id": "weapon_material", "type": "map", "gene": 3, "start": 2, "length": 2,
-        "values": [
-            {
-                "value": 0,
-                "key": "Bone"
-            },
-            {
-                "value": 1,
-                "key": "Flint"
-            },
-            {
-                "value": 2,
-                "key": "Obsidian"
-            },
-            {
-                "value": 3,
-                "key": "Wood"
             }
         ]
     },
