@@ -60,12 +60,12 @@
         "length": 7,
         "values": [
             {
-                "key": "Axe",
+                "key": "Dagger",
                 "value": [0, 50]
             },
             {
-                "key": "Dagger",
-                "value": [51, 100]
+                "key": "Axe",
+                "value": [51, 127]
             }
         ]
     }
