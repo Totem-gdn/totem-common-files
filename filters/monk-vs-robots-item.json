@@ -1,4 +1,5 @@
 [
+    {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24},
     {
         "description": "Weapon Material",
         "id": "weapon_material",
