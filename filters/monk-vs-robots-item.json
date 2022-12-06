@@ -1,0 +1,28 @@
+[
+    {
+        "description": "Weapon Material",
+        "id": "weapon_material",
+        "type": "map",
+        "gene": 0,
+        "start": 0,
+        "length": 2,
+        "values": [
+            {
+                "value": 0,
+                "key": "Bone"
+            },
+            {
+                "value": 1,
+                "key": "Flint"
+            },
+            {
+                "value": 2,
+                "key": "Obsidian"
+            },
+            {
+                "value": 3,
+                "key": "Wood"
+            }
+        ]
+    }
+]
