@@ -6,4 +6,4 @@ exports.legacy_abi = require('./ABI/json/TotemLegacy.json')
 exports.totemAvatarDreadstoneKeepFilterJson = require('./filters/totem-avatar-dreadstone-keep.json')
 exports.totemItemDreadstoneKeepFilterJson = require('./filters/totem-item-dreadstone-keep.json')
 exports.monkVsRobotsAvatarFilterJson = require('./filters/monk-vs-robots-avatar.json')
-
+exports.monkVsRobotsItemFilterJson = require('./filters/monk-vs-robots-item.json')
