@@ -1,6 +1,26 @@
 [
-    {"description": "Body Strength", "id": "body_strength", "type": "bool", "gene": 0, "start": 13, "length": 1},
-    {"description": "Body Type", "id": "body_type", "type": "bool", "gene": 0, "start": 14, "length": 1},
+    {"description": "Body Strength", 
+        "id": "body_strength", 
+        "type": "bool", 
+        "gene": 0, 
+        "start": 13, 
+        "length": 1,
+        "values": [
+            "Wimp",
+            "Muscular"
+        ]
+    },
+    {"description": "Body Type", 
+        "id": "body_type", 
+        "type": "bool", 
+        "gene": 0, 
+        "start": 14, 
+        "length": 1,
+        "values": [
+            "Thin",
+            "Fat"
+        ]
+    },
     {"description": "Human Skin Color", "id": "human_skin_color", "type": "map", "gene": 1, "start": 0, "length": 4,
         "values": [
             {
