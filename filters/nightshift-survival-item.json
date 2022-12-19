@@ -1,0 +1,32 @@
+[
+    {
+        "description": "Weapon Type",
+        "id": "weapon_type",
+        "type": "map",
+        "gene": 0,
+        "start": 0,
+        "length": 2,
+        "values": [
+            {
+                "key": "Candle"
+            },
+            {
+                "key": "Party Ballon"
+            },
+            {
+                "key": "Skip Ball"
+            },
+            {
+                "key": "Slingshot"
+            }
+        ]
+    },
+    {
+        "description": "Primary Color",
+        "id": "primary_color",
+        "type": "Color",
+        "gene": 2,
+        "start": 0,
+        "length": 24
+    }
+]
