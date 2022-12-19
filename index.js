@@ -8,3 +8,5 @@ exports.totemItemDreadstoneKeepFilterJson = require('./filters/totem-item-dreads
 exports.monkVsRobotsAvatarFilterJson = require('./filters/monk-vs-robots-avatar.json')
 exports.monkVsRobotsItemFilterJson = require('./filters/monk-vs-robots-item.json')
 exports.nightshiftSurvivalAvatarFilterJson = require('./filters/nightshift-survival-avatar.json')
+exports.nightshiftSurvivalItemFilterJson = require('./filters/nightshift-survival-item.json')
+
