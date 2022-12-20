@@ -164,38 +164,36 @@
         "values": [
             {
                 "value": 0,
-                "key": "afro"
+                "key": "Afro"
             },
             {
                 "value": 1,
-                "key": "asymmetrical"
+                "key": "Asymmetrical"
             },
             {
                 "value": 2,
-                "key": "braids"
+                "key": "Braids"
             },
             {
                 "value": 3,
-                "key": "buzz cut"
+                "key": "Buzzcut"
             },
             {
                 "value": 4,
-                "key": "dreadlocks"
+                "key": "Dreadlocks"
             },
             {
                 "value": 5,
-                "key": "long"
+                "key": "Long"
             },
             {
                 "value": 6,
-                "key": "ponytail"
+                "key": "Ponytail"
             },
             {
                 "value": 7,
-                "key": "short"
+                "key": "Short"
             }
         ]
-    },
-    {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24}
-
+    }
 ]
