@@ -52,21 +52,11 @@
         ]
     },
     {
-        "description": "Weapon Type",
-        "id": "weapon_type",
-        "type": "range",
-        "gene": 3,
-        "start": 3,
-        "length": 7,
-        "values": [
-            {
-                "key": "Dagger",
-                "value": [0, 50]
-            },
-            {
-                "key": "Axe",
-                "value": [51, 127]
-            }
-        ]
+        "description": "Range",
+        "id": "range_nd",
+        "type": "int",
+        "gene": 8,
+        "start": 0,
+        "length": 32
     }
 ]
