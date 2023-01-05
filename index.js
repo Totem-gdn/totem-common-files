@@ -11,4 +11,5 @@ exports.nightshiftSurvivalAvatarFilterJson = require('./filters/nightshift-survi
 exports.nightshiftSurvivalItemFilterJson = require('./filters/nightshift-survival-item.json')
 exports.treeTalesAvatarFilterJson = require('./filters/tree-tales-avatar.json')
 exports.treeTalesItemFilterJson = require('./filters/tree-tales-item.json')
-
+exports.dinoAvatarFilterJson = require('./filters/dino-avatar.json')
+exports.dinoItemFilterJson = require('./filters/dino-item.json')
