@@ -1,27 +1,11 @@
 [
-    {
-        "description": "Weapon Material",
-        "id": "weapon_material",
-        "type": "map",
-        "gene": 0,
-        "start": 0,
-        "length": 3,
+     {"description": "Weapon Material", "id": "weapon_material", "type": "range", "gene": 4, "start": 0, "length": 4,
         "values": [
-            {
-                "key": "Bones"
-            },
-            {
-                "key": "Flint"
-            },
-            {
-                "key": "Obsidian"
-            },
-            {
-                "key": "Standart"
-            },
-            {
-                "key": "Wood"
-            }
+            {"key": "Bone", "value": [0, 2]},
+            {"key": "Wood", "value": [3, 6]},
+            {"key": "Flint", "value": [6, 8]},
+            {"key": "Obsidian", "value": [9, 11]},
+            {"key": "Standart", "value": [12, 15]}
         ]
     },
     {"description": "Damage", "id": "damage_nd", "type": "int", "gene": 9, "start": 0, "length": 32},
