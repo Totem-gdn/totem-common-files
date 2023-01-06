@@ -8,16 +8,20 @@
         "length": 2,
         "values": [
             {
-                "key": "Candle"
+                "key": "Candle",
+                "value": 0
             },
             {
-                "key": "Party Ballon"
+                "key": "Party Ballon",
+                "value": 1
             },
             {
-                "key": "Skip Ball"
+                "key": "Skip Ball",
+                "value": 2
             },
             {
-                "key": "Slingshot"
+                "key": "Slingshot",
+                "value": 3
             }
         ]
     },
