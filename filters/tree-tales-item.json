@@ -8,16 +8,20 @@
         "length": 2,
         "values": [
             {
-                "key": "Ancihno"
+                "key": "Ancihno",
+                "value": 0
             },
             {
-                "key": "Pa"
+                "key": "Pa",
+                "value": 1
             },
             {
-                "key": "Pulve"
+                "key": "Pulve",
+                "value": 2
             },
             {
-                "key": "Tesoura"
+                "key": "Tesoura",
+                "value": 3
             }
         ]
     },
