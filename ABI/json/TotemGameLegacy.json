@@ -1,6 +1,17 @@
 [
   {
-    "inputs": [],
+    "inputs": [
+      {
+        "internalType": "string",
+        "name": "name",
+        "type": "string"
+      },
+      {
+        "internalType": "string",
+        "name": "symbol",
+        "type": "string"
+      }
+    ],
     "stateMutability": "nonpayable",
     "type": "constructor"
   },
@@ -9,62 +20,18 @@
     "inputs": [
       {
         "indexed": true,
-        "internalType": "uint256",
-        "name": "gameId",
-        "type": "uint256"
-      },
-      {
-        "indexed": true,
         "internalType": "address",
-        "name": "owner",
+        "name": "gameAddress",
         "type": "address"
       },
       {
         "indexed": true,
-        "internalType": "address",
-        "name": "createdBy",
-        "type": "address"
-      }
-    ],
-    "name": "GameCreate",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
         "internalType": "uint256",
-        "name": "gameId",
+        "name": "recordId",
         "type": "uint256"
-      },
-      {
-        "indexed": true,
-        "internalType": "enum Status",
-        "name": "status",
-        "type": "uint8"
       }
     ],
-    "name": "GameStatusChange",
-    "type": "event"
-  },
-  {
-    "anonymous": false,
-    "inputs": [
-      {
-        "indexed": true,
-        "internalType": "uint256",
-        "name": "gameId",
-        "type": "uint256"
-      },
-      {
-        "indexed": true,
-        "internalType": "address",
-        "name": "updatedBy",
-        "type": "address"
-      }
-    ],
-    "name": "GameUpdate",
+    "name": "GameLegacyRecord",
     "type": "event"
   },
   {
@@ -183,7 +150,7 @@
   },
   {
     "inputs": [],
-    "name": "GAME_MANAGER_ROLE",
+    "name": "MANAGER_ROLE",
     "outputs": [
       {
         "internalType": "bytes32",
@@ -210,41 +177,32 @@
   {
     "inputs": [
       {
-        "internalType": "uint256",
-        "name": "index",
-        "type": "uint256"
-      },
-      {
-        "internalType": "enum Status",
-        "name": "status",
-        "type": "uint8"
+        "internalType": "address",
+        "name": "gameAddress",
+        "type": "address"
       }
     ],
-    "name": "changeStatus",
-    "outputs": [],
-    "stateMutability": "nonpayable",
+    "name": "balanceOf",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
     "type": "function"
   },
   {
     "inputs": [
       {
-        "internalType": "string",
-        "name": "name",
-        "type": "string"
+        "internalType": "address",
+        "name": "gameAddress",
+        "type": "address"
       },
       {
         "internalType": "string",
-        "name": "author",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "renderer_uri",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "filters_uri",
+        "name": "data",
         "type": "string"
       }
     ],
@@ -257,89 +215,7 @@
     "inputs": [
       {
         "internalType": "address",
-        "name": "owner",
-        "type": "address"
-      },
-      {
-        "internalType": "string",
-        "name": "name",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "author",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "renderer_uri",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "filters_uri",
-        "type": "string"
-      },
-      {
-        "internalType": "enum Status",
-        "name": "status",
-        "type": "uint8"
-      }
-    ],
-    "name": "createByManager",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "index",
-        "type": "uint256"
-      }
-    ],
-    "name": "gameByIndex",
-    "outputs": [
-      {
-        "internalType": "address",
-        "name": "owner",
-        "type": "address"
-      },
-      {
-        "internalType": "string",
-        "name": "name",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "author",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "renderer_uri",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "filters_uri",
-        "type": "string"
-      },
-      {
-        "internalType": "enum Status",
-        "name": "status",
-        "type": "uint8"
-      }
-    ],
-    "stateMutability": "view",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "owner",
+        "name": "gameAddress",
         "type": "address"
       },
       {
@@ -348,32 +224,29 @@
         "type": "uint256"
       }
     ],
-    "name": "gameOfOwnerByIndex",
+    "name": "gameRecordByIndex",
     "outputs": [
       {
-        "internalType": "string",
-        "name": "name",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "author",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "renderer_uri",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "filters_uri",
-        "type": "string"
-      },
-      {
-        "internalType": "enum Status",
-        "name": "status",
-        "type": "uint8"
+        "components": [
+          {
+            "internalType": "address",
+            "name": "gameAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "data",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct TotemGameLegacy.LegacyRecord",
+        "name": "record",
+        "type": "tuple"
       }
     ],
     "stateMutability": "view",
@@ -484,19 +357,13 @@
     "type": "function"
   },
   {
-    "inputs": [
-      {
-        "internalType": "address",
-        "name": "owner",
-        "type": "address"
-      }
-    ],
-    "name": "ownerTotalSupply",
+    "inputs": [],
+    "name": "name",
     "outputs": [
       {
-        "internalType": "uint256",
+        "internalType": "string",
         "name": "",
-        "type": "uint256"
+        "type": "string"
       }
     ],
     "stateMutability": "view",
@@ -517,6 +384,42 @@
         "internalType": "bool",
         "name": "",
         "type": "bool"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "index",
+        "type": "uint256"
+      }
+    ],
+    "name": "recordByIndex",
+    "outputs": [
+      {
+        "components": [
+          {
+            "internalType": "address",
+            "name": "gameAddress",
+            "type": "address"
+          },
+          {
+            "internalType": "uint256",
+            "name": "timestamp",
+            "type": "uint256"
+          },
+          {
+            "internalType": "string",
+            "name": "data",
+            "type": "string"
+          }
+        ],
+        "internalType": "struct TotemGameLegacy.LegacyRecord",
+        "name": "record",
+        "type": "tuple"
       }
     ],
     "stateMutability": "view",
@@ -579,6 +482,19 @@
   },
   {
     "inputs": [],
+    "name": "symbol",
+    "outputs": [
+      {
+        "internalType": "string",
+        "name": "",
+        "type": "string"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [],
     "name": "totalSupply",
     "outputs": [
       {
@@ -593,39 +509,6 @@
   {
     "inputs": [],
     "name": "unpause",
-    "outputs": [],
-    "stateMutability": "nonpayable",
-    "type": "function"
-  },
-  {
-    "inputs": [
-      {
-        "internalType": "uint256",
-        "name": "index",
-        "type": "uint256"
-      },
-      {
-        "internalType": "string",
-        "name": "name",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "author",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "renderer_uri",
-        "type": "string"
-      },
-      {
-        "internalType": "string",
-        "name": "filters_uri",
-        "type": "string"
-      }
-    ],
-    "name": "update",
     "outputs": [],
     "stateMutability": "nonpayable",
     "type": "function"

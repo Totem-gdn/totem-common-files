@@ -1,8 +1,5 @@
 exports.itemFilterJson = require('./filters/totem-item.json')
 exports.avatarFilterJson = require('./filters/totem-avatar.json')
-exports.assets_abi = require('./ABI/assets_abi.json')
-exports.game_directory_abi = require('./ABI/json/TotemGameDirectory.json')
-exports.legacy_abi = require('./ABI/json/TotemLegacy.json')
 exports.totemAvatarDreadstoneKeepFilterJson = require('./filters/totem-avatar-dreadstone-keep.json')
 exports.totemItemDreadstoneKeepFilterJson = require('./filters/totem-item-dreadstone-keep.json')
 exports.monkVsRobotsAvatarFilterJson = require('./filters/monk-vs-robots-avatar.json')
@@ -13,3 +10,11 @@ exports.treeTalesAvatarFilterJson = require('./filters/tree-tales-avatar.json')
 exports.treeTalesItemFilterJson = require('./filters/tree-tales-item.json')
 exports.dinoAvatarFilterJson = require('./filters/dino-avatar.json')
 exports.dinoItemFilterJson = require('./filters/dino-item.json')
+
+
+// Totem Smart Contracts ABI
+exports.assets_abi = require('./ABI/assets_abi.json')
+exports.totem_asset_abi = require('./ABI/json/TotemAsset.json')
+exports.totem_asset_legacy_abi = require('./ABI/json/TotemAssetLegacy.json')
+exports.totem_game_legacy_abi = require('./ABI/json/TotemGameLegacy.json')
+exports.totem_games_directory_abi = require('./ABI/json/TotemGamesDirectory.json')
