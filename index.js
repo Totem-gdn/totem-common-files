@@ -10,7 +10,7 @@ exports.treeTalesAvatarFilterJson = require('./filters/tree-tales-avatar.json')
 exports.treeTalesItemFilterJson = require('./filters/tree-tales-item.json')
 exports.dinoAvatarFilterJson = require('./filters/dino-avatar.json')
 exports.dinoItemFilterJson = require('./filters/dino-item.json')
-
+exports.musicRushAvatarFilterJson = require('./filters/music-rush-avatar.json')
 
 // Totem Smart Contracts ABI
 exports.assets_abi = require('./ABI/assets_abi.json')
