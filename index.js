@@ -11,6 +11,8 @@ exports.treeTalesItemFilterJson = require('./filters/tree-tales-item.json')
 exports.dinoAvatarFilterJson = require('./filters/dino-avatar.json')
 exports.dinoItemFilterJson = require('./filters/dino-item.json')
 exports.musicRushAvatarFilterJson = require('./filters/music-rush-avatar.json')
+exports.outpostsAvatarFilterJson = require('./filters/outposts-avatar.json')
+exports.outpostsItemFilterJson = require('./filters/outposts-item.json')
 
 // Totem Smart Contracts ABI
 exports.assets_abi = require('./ABI/assets_abi.json')
