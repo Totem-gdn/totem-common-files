@@ -1,0 +1,16 @@
+[
+    {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24},
+    {"description": "Element", "id": "classical_element", "type": "map", "gene": 0, "start": 10, "length": 2,
+        "values": [{"key": "Air", "value": 0}, {"key": "Earth", "value": 1}, {"key": "Water", "value": 2}, {"key": "Fire", "value": 3}]
+    },
+    {"description": "Damage", "id": "damage_nd", "type": "int", "gene": 9, "start": 0, "length": 32},
+    {"description": "Range", "id": "range_nd", "type": "int", "gene": 8, "start": 0, "length": 32},
+    {"description": "Weapon Material", "id": "weapon_material", "type": "range", "gene": 4, "start": 0, "length": 4,
+        "values": [
+            {"key": "Bronze", "value": [0, 7]},
+            {"key": "Prata", "value": [8, 11]},
+            {"key": "Ouro", "value": [12, 14]},
+            {"key": "Diamante", "value": [15, 15]}
+        ]
+    }
+]
