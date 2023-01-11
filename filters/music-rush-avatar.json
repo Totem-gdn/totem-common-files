@@ -146,7 +146,7 @@
             {"key": "Reggae", "value": [21, 27]},
             {"key": "Rock", "value": [28, 34]},
             {"key": "Samba", "value": [35, 41]},
-            {"key": "Classic", "value": [42, 28]},
+            {"key": "Classic", "value": [42, 48]},
             {"key": "Eletro", "value": [49, 56]},
             {"key": "Latina", "value": [57, 63]}
         ]
