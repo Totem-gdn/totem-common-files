@@ -8,9 +8,9 @@
     {"description": "Weapon Material", "id": "weapon_material", "type": "range", "gene": 4, "start": 0, "length": 4,
         "values": [
             {"key": "Bronze", "value": [0, 7]},
-            {"key": "Prata", "value": [8, 11]},
-            {"key": "Ouro", "value": [12, 14]},
-            {"key": "Diamante", "value": [15, 15]}
+            {"key": "Silver", "value": [8, 11]},
+            {"key": "Gold", "value": [12, 14]},
+            {"key": "Diamond", "value": [15, 15]}
         ]
     }
 ]
