@@ -13,6 +13,7 @@ exports.dinoItemFilterJson = require('./filters/dino-item.json')
 exports.musicRushAvatarFilterJson = require('./filters/music-rush-avatar.json')
 exports.outpostsAvatarFilterJson = require('./filters/outposts-avatar.json')
 exports.outpostsItemFilterJson = require('./filters/outposts-item.json')
+exports.choirAvatarFilterJson = require('./filters/choir-avatar.json')
 
 // Totem Smart Contracts ABI
 exports.assets_abi = require('./ABI/assets_abi.json')
