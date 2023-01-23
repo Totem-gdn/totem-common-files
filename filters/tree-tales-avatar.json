@@ -56,5 +56,6 @@
                 "key": "#c4a05f"
             }
         ]
-    }
+    },
+    {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24}
 ]
