@@ -1,6 +1,6 @@
 [
     {
-        "description": "Element",
+        "description": "Tool",
         "id": "classical_element",
         "type": "map",
         "gene": 0,
@@ -8,19 +8,19 @@
         "length": 2,
         "values": [
             {
-                "key": "Ancihno",
+                "key": "Rake",
                 "value": 0
             },
             {
-                "key": "Pa",
+                "key": "Shovel",
                 "value": 1
             },
             {
-                "key": "Pulve",
+                "key": "Sprayer",
                 "value": 2
             },
             {
-                "key": "Tesoura",
+                "key": "Scissors",
                 "value": 3
             }
         ]
