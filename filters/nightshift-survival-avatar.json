@@ -176,5 +176,14 @@
         ]
     },
     {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24},
-    {"description": "Secondary Color", "id": "secondary_color", "type": "Color", "gene": 3, "start": 0, "length": 24}
+    {"description": "Secondary Color", "id": "secondary_color", "type": "Color", "gene": 3, "start": 0, "length": 24},
+    {"description": "Mood", "id": "mood", "type": "range", "gene": 4, "start": 0, "length": 4,
+        "values": [
+            {"key": "Brave", "value": [0, 3]},
+            {"key": "Fearful", "value": [4, 6]},
+            {"key": "Anxious", "value": [7, 9]},
+            {"key": "Happy", "value": [10, 12]},
+            {"key": "Apathich", "value": [13, 15]}
+        ]
+    }
 ]
