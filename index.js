@@ -14,7 +14,7 @@ exports.musicRushAvatarFilterJson = require('./filters/music-rush-avatar.json')
 exports.outpostsAvatarFilterJson = require('./filters/outposts-avatar.json')
 exports.outpostsItemFilterJson = require('./filters/outposts-item.json')
 exports.choirAvatarFilterJson = require('./filters/choir-avatar.json')
-exports.witchRaceAvatarFilterJson = require('./filters/witch-race-avatar.json')
+exports.yellowPandaAvatarFilterJson = require('./filters/yellow-panda-avatar.json')
 exports.witchRaceItemFilterJson = require('./filters/witch-race-item.json')
 
 
