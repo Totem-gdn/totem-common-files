@@ -1,0 +1,30 @@
+[
+    {
+        "description": "Tool",
+        "id": "classical_element",
+        "type": "map",
+        "gene": 0,
+        "start": 10,
+        "length": 2,
+        "values": [
+            {
+                "key": "Rake",
+                "value": 0
+            },
+            {
+                "key": "Shovel",
+                "value": 1
+            },
+            {
+                "key": "Sprayer",
+                "value": 2
+            },
+            {
+                "key": "Scissors",
+                "value": 3
+            }
+        ]
+    },
+    {"description": "Damage", "id": "damage_nd", "type": "int", "gene": 9, "start": 0, "length": 32},
+    {"description": "Range", "id": "range_nd", "type": "int", "gene": 8, "start": 0, "length": 32}
+]

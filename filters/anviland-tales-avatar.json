@@ -1,0 +1,61 @@
+[
+    {"description": "Sex", 
+        "id": "sex_bio", 
+        "type": "bool", 
+        "gene": 0, 
+        "start": 12, 
+        "length": 1,
+        "values": [
+            "Male",
+            "Female"
+        ]
+    },
+    {"description": "Body Type", 
+        "id": "body_type", 
+        "type": "bool", 
+        "gene": 0, 
+        "start": 14, 
+        "length": 1,
+        "values": [
+            "Thin",
+            "Fat"
+        ]
+    },
+    {"description": "Eye Color", "id": "eye_color", "type": "map", "gene": 1, "start": 7, "length": 3,
+        "values": [
+            {
+                "value": 0,
+                "key": "#3d0d04"
+            },
+            {
+                "value": 1,
+                "key": "#7a3411"
+            },
+            {
+                "value": 2,
+                "key": "#7c8b4f"
+            },
+            {
+                "value": 3,
+                "key": "#90b4ca"
+            },
+            {
+                "value": 4,
+                "key": "#a7ad7f"
+            },
+            {
+                "value": 5,
+                "key": "#a97e33"
+            },
+            {
+                "value": 6,
+                "key": "#B5D6E0"
+            },
+            {
+                "value": 7,
+                "key": "#c4a05f"
+            }
+        ]
+    },
+    {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24}
+]
