@@ -1,7 +1,4 @@
 [
-    {"description": "Sex", "id": "sex_bio", "type": "bool", "gene": 0, "start": 12, "length": 1},
-    {"description": "Body Strength", "id": "body_strength", "type": "bool", "gene": 0, "start": 13, "length": 1},
-    {"description": "Body Type", "id": "body_type", "type": "bool", "gene": 0, "start": 14, "length": 1},
     {"description": "Human Skin Color", "id": "human_skin_color", "type": "map", "gene": 1, "start": 0, "length": 4,
         "values": [
             {
@@ -178,7 +175,7 @@
         ]
     },
     {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24},
-    {"description": "Secondary Color", "id": "secondary_color", "type": "Color", "gene": 1, "start": 0, "length": 24},
+    {"description": "Secondary Color", "id": "secondary_color", "type": "Color", "gene": 3, "start": 0, "length": 24},
     {"description": "Mask", "id": "mask", "type": "map", "gene": 1, "start": 5, "length": 2,
         "values": [
             {

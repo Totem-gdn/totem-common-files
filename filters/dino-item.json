@@ -7,7 +7,7 @@
             {"key": "Obsidian", "value": [9, 11]},
             {"key": "Standart", "value": [12, 15]}
         ]
-    },
+    },    
     {"description": "Damage", "id": "damage_nd", "type": "int", "gene": 9, "start": 0, "length": 32},
     {"description": "Range", "id": "range_nd", "type": "int", "gene": 8, "start": 0, "length": 32}
 ]

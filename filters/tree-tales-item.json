@@ -4,7 +4,7 @@
         "id": "classical_element",
         "type": "map",
         "gene": 0,
-        "start": 0,
+        "start": 10,
         "length": 2,
         "values": [
             {

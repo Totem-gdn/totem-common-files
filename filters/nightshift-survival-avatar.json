@@ -1,5 +1,5 @@
 [
-        {"description": "Human Eye Color", "id": "human_eye_color", "type": "map", "gene": 1, "start": 7, "length": 3,
+    {"description": "Human Eye Color", "id": "human_eye_color", "type": "map", "gene": 1, "start": 7, "length": 3,
         "values": [
             {
                 "value": 0,

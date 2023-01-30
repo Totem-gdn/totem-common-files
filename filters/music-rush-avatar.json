@@ -106,7 +106,7 @@
         "values": [
             {
                 "value": 0,
-                "key": "Braids"
+                "key": "Afro"
             },
             {
                 "value": 1,
@@ -114,27 +114,27 @@
             },
             {
                 "value": 2,
-                "key": "Afro"
+                "key": "Braids"
             },
             {
                 "value": 3,
-                "key": "Short"
-            },
-            {
-                "value": 4,
                 "key": "BuzzCut"
             },
             {
-                "value": 5,
+                "value": 4,
                 "key": "Dreadlocks"
             },
             {
-                "value": 6,
+                "value": 5,
                 "key": "Long"
             },
             {
-                "value": 7,
+                "value": 6,
                 "key": "Ponytail"
+            },
+            {
+                "value": 7,
+                "key": "Short"
             }
         ]
     },
