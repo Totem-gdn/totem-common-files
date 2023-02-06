@@ -1,40 +1,4 @@
 [
-    {"description": "Human Eye Color", "id": "human_eye_color", "type": "map", "gene": 1, "start": 7, "length": 3,
-        "values": [
-            {
-                "value": 0,
-                "key": "#b5d6e0"
-            },
-            {
-                "value": 1,
-                "key": "#90b4ca"
-            },
-            {
-                "value": 2,
-                "key": "#a7ad7f"
-            },
-            {
-                "value": 3,
-                "key": "#7c8b4f"
-            },
-            {
-                "value": 4,
-                "key": "#c4a05f"
-            },
-            {
-                "value": 5,
-                "key": "#a97e33"
-            },
-            {
-                "value": 6,
-                "key": "#7a3411"
-            },
-            {
-                "value": 7,
-                "key": "#3d0d04"
-            }
-        ]
-    },
     {"description": "Human Skin Color", "id": "human_skin_color", "type": "map", "gene": 1, "start": 0, "length": 4,
         "values": [
             {
