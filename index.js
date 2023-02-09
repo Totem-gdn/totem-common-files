@@ -18,6 +18,7 @@ exports.yellowPandaAvatarFilterJson = require('./filters/yellow-panda-avatar.jso
 exports.witchRaceItemFilterJson = require('./filters/witch-race-item.json')
 exports.anvilandTalesAvatarFilterJson = require('./filters/anviland-tales-avatar.json')
 exports.anvilandTalesItemFilterJson = require('./filters/anviland-tales-item.json')
+exports.nephenthesysItemFilterJson = require('./filters/nephenthesys-item.json')
 
 
 // Totem Smart Contracts ABI
