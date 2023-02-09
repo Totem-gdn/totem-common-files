@@ -1,0 +1,10 @@
+[
+    {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24},
+    {"description": "Chassi", "id": "chassi_nd", "type": "int", "gene": 3, "start": 0, "length": 20},
+    {"description": "Cockpit", "id": "cockpit_nd", "type": "int", "gene": 4, "start": 0, "length": 20},
+    {"description": "Thruster", "id": "thruster_nd", "type": "int", "gene": 5, "start": 0, "length": 20},
+    {"description": "Wings", "id": "wings_nd", "type": "int", "gene": 6, "start": 0, "length": 20},
+    {"description": "Element", "id": "classical_element", "type": "map", "gene": 0, "start": 10, "length": 2,
+        "values": [{"key": "Air", "value": 0}, {"key": "Earth", "value": 1}, {"key": "Water", "value": 2}, {"key": "Fire", "value": 3}]
+    }
+]
