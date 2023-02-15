@@ -131,7 +131,7 @@
             },
             {
                 "value": 6,
-                "key": "Ponytrail"
+                "key": "Ponytail"
             },
             {
                 "value": 7,
@@ -141,13 +141,40 @@
     },
     {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24},
     {"description": "Secondary Color", "id": "secondary_color", "type": "Color", "gene": 3, "start": 0, "length": 24},
-    {"description": "Mood", "id": "mood", "type": "range", "gene": 4, "start": 0, "length": 4,
+    {"description": "Mood", "id": "mood", "type": "map", "gene": 1, "start": 6, "length": 3,
         "values": [
-            {"key": "Brave", "value": [0, 3]},
-            {"key": "Fearful", "value": [4, 6]},
-            {"key": "Anxious", "value": [7, 9]},
-            {"key": "Happy", "value": [10, 12]},
-            {"key": "Apathich", "value": [13, 15]}
+            {
+                "value": 0,
+                "key": "Brave"
+            },
+            {
+                "value": 1,
+                "key": "Apathich"
+            },
+            {
+                "value": 2,
+                "key": "Happy"
+            },
+            {
+                "value": 3,
+                "key": "Fearful"
+            },
+            {
+                "value": 4,
+                "key": "Anxious"
+            },
+            {
+                "value": 5,
+                "key": "Happy"
+            },
+            {
+                "value": 6,
+                "key": "Fearful"
+            },
+            {
+                "value": 7,
+                "key": "Brave"
+            }
         ]
     }
 ]
