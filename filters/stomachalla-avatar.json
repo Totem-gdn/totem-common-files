@@ -1,0 +1,39 @@
+[
+    {"description": "Hair Style", "id": "hair_styles", "type": "map", "gene": 1, "start": 10, "length": 3,
+        "values": [
+            {
+                "value": 0,
+                "key": "afro"
+            },
+            {
+                "value": 1,
+                "key": "asymmetrical"
+            },
+            {
+                "value": 2,
+                "key": "braids"
+            },
+            {
+                "value": 3,
+                "key": "buzz cut"
+            },
+            {
+                "value": 4,
+                "key": "dreadlocks"
+            },
+            {
+                "value": 5,
+                "key": "long"
+            },
+            {
+                "value": 6,
+                "key": "ponytail"
+            },
+            {
+                "value": 7,
+                "key": "short"
+            }
+        ]
+    },
+    {"description": "Primary Color", "id": "primary_color", "type": "Color", "gene": 2, "start": 0, "length": 24}
+]
