@@ -20,6 +20,7 @@ exports.anvilandTalesAvatarFilterJson = require('./filters/anviland-tales-avatar
 exports.anvilandTalesItemFilterJson = require('./filters/anviland-tales-item.json')
 exports.nephenthesysItemFilterJson = require('./filters/nephenthesys-item.json')
 exports.sumoTatamiAvatarFilterJson = require('./filters/sumo-tatami-avatar.json')
+exports.stomachallaAvatarFilterJson = require('./filters/stomachalla-avatar.json')
 
 // Totem Smart Contracts ABI
 exports.assets_abi = require('./ABI/assets_abi.json')
